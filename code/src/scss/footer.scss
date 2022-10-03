@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    height: auto;
+    margin: 25px 0px 0px 0px;
+    background: rgba(23, 26, 33, 1);
+    display: flex;
+    justify-content: center;
+    &__container {
+        padding: 62px 0px;
+        
+    }
+    &__info {
+        z-index: 100;
+        span {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+        a{
+            font-family: "Inter";
+            font-style: normal;
+            background-color: #0a40ff;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+            background-image: linear-gradient(90deg, #0A40FF 1.65%, #826DFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+
+

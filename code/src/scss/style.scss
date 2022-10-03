@@ -1,0 +1,400 @@
+@import "fonts";
+@import "null";
+@import "header";
+@import "formul";
+@import "footer";
+@import "swiper";
+@import "swiper-bundle";
+
+main {
+    height: auto;
+    width: 100%;
+}
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrapper {
+    background: url(../img/background1.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.column-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+   
+.column-left-container {
+    
+}
+.image-elips {
+    width: 100%;
+    height: 863px;
+    position: absolute;
+    background: url(../img/elips1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    top: 0%;
+    z-index: 0;
+}
+.image-elips2 {
+    width: 100%;
+    height: 906px;
+    position: absolute;
+    background: url(../img/elips2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    top: 0%;
+    z-index: 0;
+}
+.image-elips3 {
+    width: 100%;
+    height: 975px;
+    position: absolute;
+    background: url(../img/elips3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    top: 0%;
+    z-index: 0;
+}
+
+.hello {
+    
+    padding: 80px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    &__description {
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 276px;
+        padding: 0px 0px 20px 0px;
+        span {
+            padding: 0px 0px 0px 30px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+            font-family: "Inter";
+            font-style: normal;
+        }
+    }
+    &__btn {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+.logo {
+    font-size: 70px;
+}
+
+.description {
+    &__heading {
+        color: #fff;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        padding: 0px 0px 20px 0px;
+    }
+    &__list {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        list-style: disc;
+        color: #afafaf;
+        padding: 0px 0px 30px 25px;
+    }
+    &__link {
+    }
+    &__memo {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        padding: 0px 0px 80px 0px;
+        a {
+            background-color: #0a40ff;
+            font-size: 16px;
+            background-image: $gradientText;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.btn__downdload {
+    width: 375px;
+    background: $gradientBtn;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 10px;
+    transition: all 0.6s ease 0s;
+    &:hover {
+        background: $gradientBtnHover;
+        box-shadow: 4px 0px 4px rgb(0, 0, 46, .2);
+    }
+}
+.download {
+    font-size: 32px;
+    span {
+        font-family: "Inter";
+        font-style: normal;
+        padding: 0px 0px 0px 20px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+}
+
+.screen {
+    padding: 80px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    &__heading {
+        padding: 0px 0px 60px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            color: #ffffff;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+        }
+        p {
+            width: 400px;
+            text-align: center;
+            padding: 10px 0px 0px 0px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    min-width: 0;
+    margin: 0px 0px 40px 0px;
+}
+
+.swiper {
+    width: 664px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-next {
+    background: $gradientblock;
+    border-radius: 7px;
+    padding: 33px 3px;
+    color: #ffffff;
+    &::after {
+        font-size: 14px;
+    }
+}
+
+.swiper-button-prev {
+    background: $gradientblock;
+    border-radius: 7px;
+    padding: 33px 3px;
+    color: #ffffff;
+    &::after {
+        font-size: 14px;
+    }
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+}
+.swiper-button-prev,
+.swiper-button-next {
+}
+
+.slider__image {
+    text-align: center;
+    display: flex;
+    width: 580px;
+    img {
+        max-width: 100%;
+        pointer-events: none;
+    }
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.block {
+    width: 460px;
+    height: auto;
+    background: $gradientblock;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+    margin: 0px 0px 50px 0px;
+    border-radius: 10px;
+    &:last-child {
+        margin: 0px 0px 0px 0px;
+    }
+    &__header {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 0px 25px 0px;
+        h3 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #ffffff;
+        }
+    }
+    &__discription {
+        p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #a7a7a7;
+            text-align: start;
+        }
+    }
+    &__time {
+        padding: 25px 0px 0px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #a7a7a7;
+        }
+    }
+}
+
+.icon-header {
+    color: #ffffff;
+    font-size: 32px;
+    padding: 0px 10px 0px 0px;
+}
+
+.parallax{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    &__container{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-parallax{
+    width: 100%;
+    height: 100%;
+    padding: 40px 50px;
+}
+.parallax-wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-image{
+    width: 100%;
+    height: 100%;
+}
+
+.image-item{
+        width: 100%;
+        height: 99px;
+        background: url(../img/caskad1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+
+.image-item-midlle{
+    width: 100%;
+    height: 99px;
+    background: url(../img/caskad2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.image-item-bottom{
+    width: 100%;
+    height: 99px;
+    background: url(../img/caskad3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}

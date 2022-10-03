@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+
+    @@include('_header.html',{})
+    <div class="wrapper">
+        <main class="page">
+            <div class="column">
+                <div class="image-elips"></div>
+                <div class="column-left">
+                    <div class="column-left-container">
+                        <div class="hello">
+                            <div class="hello__logo">
+                                <a class="logo icon-steam" href="#"></a>
+                                <span>STEAM</span>
+                            </div>
+                            <div class="hello__description">
+                                <h1 class="description__heading">Steam - библиотека игр!</h1>
+                                <ul class="description__list">
+                                    <li class="description__link">Бесплатные игры.</li>
+                                    <li class="desctiption__link">Платные ААА проекты.</li>
+                                    <li class="desctiption__link">Профессиональный софт.</li>
+                                </ul>
+                                <div class="description__memo">
+                                    <p>Сообщество Steam насчитывает миллионы пользователей.</p>
+                                    <a href="#">Присоединяйся и ты!</a>
+                                </div>
+                            </div>
+                            <div class="hello__btn">
+                                <button class="btn__downdload">
+                                    <a class="download icon-download" href="#"><span>Скачать Steam</span></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-right">
+                    <div class="column-right-container">
+                        <div class="screen">
+                            <div class="screen__heading">
+                                <h2>Скриншоты</h2>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider__image">
+                                            <img src="./img/screenshots2.png" alt="Картинка">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__image">
+                                            <img src="./img/screenshots3.png" alt="Картинка">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider__image">
+                                            <img src="./img/screenshots3.png" alt="Картинка">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <div class="parallax__container">
+                    <div class="swiper swiper-parallax">
+                        <div class="swiper-wrapper parallax-wrapper">
+                            <div class="swiper-slide parallax-image">
+                                <div class="image-item"></div>
+                            </div>
+                            <div class="swiper-slide parallax-image">
+                                <div class="image-item-midlle"></div>
+                            </div>
+                            <div class="swiper-slide parallax-image">
+                                <div class="image-item-bottom"></div>
+                            </div>
+                         
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    @@include('_js.html', {})
+</body>
+
+</html>

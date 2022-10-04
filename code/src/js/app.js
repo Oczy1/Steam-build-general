@@ -3,7 +3,7 @@ import * as oczyFunctions from "./modules/functions.js";
 
 oczyFunctions.isWebp();
 
-
+oczyFunctions.scrollHandler();
 //oczyFunctions.canva();
 
 
@@ -50,19 +50,25 @@ document.querySelectorAll('.page').forEach(n => {
     spaceBetween: 10,
   });
 
-  const thumbs = new Swiper(n.querySelector('.swiper-parallax'), {
+  // const thumbs = new Swiper(n.querySelector('.swiper-parallax'), {
     
-    spaceBetween: 1,
-    centeredSlides: true,
-    slidesPerView: 4,
-    touchRatio: 0.2,
-    mousewheel: true,
-    slideToClickedSlide: true,
-    direction: 'vertical',
+  //   spaceBetween: 1,
+  //   centeredSlides: true,
+  //   slidesPerView: 4,
+  //   touchRatio: 0.2,
+  //   freeMode: true,
+  //   forceToAxis: true,
+  //   mousewheel: {
+  //     invert: true,
+  //   },
+  //   slideToClickedSlide: true,
+  //   direction: 'vertical',
 
-  });
+  //});
+
+  //thumbs.mousewheel.enable();
 
   slider.controller.control = thumbs;
-  thumbs.controller.control = slider;
+  //thumbs.controller.control = slider;
 });
 

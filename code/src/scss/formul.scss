@@ -10,7 +10,29 @@ $md4: 479.98px;
 //<Переменные====================================================================================================================
 
 
+@keyframes kirill{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 200px;
+    }
+}
 
+@keyframes debil{
+    0%{
+        top: 200;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
 
 
 //<Основная адаптивная сетка брэкпоинты
@@ -36,7 +58,7 @@ $md4: 479.98px;
 .wrapper{
     width: 100%;
     min-height: 100%;
-    overflow: hidden;
+    //overflow: hidden;
     display: flex;
     flex-direction: column;
     &._loaded{

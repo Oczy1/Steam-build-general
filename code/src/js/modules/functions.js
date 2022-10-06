@@ -350,7 +350,6 @@ export function scrollHandler() {
 
     // // and then make each element do something on scroll
     const element = document.querySelector('.parallax__container');
-
     window.addEventListener(
         "scroll",
         () => {
@@ -361,7 +360,7 @@ export function scrollHandler() {
                     else break;
                 }
             }
-
+            
         }
     );
 

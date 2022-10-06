@@ -13,17 +13,17 @@ import Swiper, {Navigation} from 'swiper';
 
 
 
-// export const swiper = new Swiper('.swiper', {
-//   speed: 400,
-//   spaceBetween: 100,
-//   direction: 'horizontal',
-//   loop: true,
-//     modules: [Navigation],
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//       },
-// });
+export const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 100,
+  direction: 'horizontal',
+  loop: true,
+    modules: [Navigation],
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
 
 
 // export const swipper = new Swiper('.swiper-parallax', {
@@ -36,19 +36,19 @@ import Swiper, {Navigation} from 'swiper';
 
 
 
-document.querySelectorAll('.page').forEach(n => {
-  const slider = new Swiper(n.querySelector('.swiper'), {
-    speed: 400,
-    spaceBetween: 100,
-    direction: 'horizontal',
-    loop: true,
-    modules: [Navigation],
-    navigation: {
-      nextEl: n.querySelector('.swiper-button-next'),
-      prevEl: n.querySelector('.swiper-button-prev'),
-    },
-    spaceBetween: 10,
-  });
+// document.querySelectorAll('.page').forEach(n => {
+//   const slider = new Swiper(n.querySelector('.swiper'), {
+//     speed: 400,
+//     spaceBetween: 100,
+//     direction: 'horizontal',
+//     loop: true,
+//     modules: [Navigation],
+//     navigation: {
+//       nextEl: n.querySelector('.swiper-button-next'),
+//       prevEl: n.querySelector('.swiper-button-prev'),
+//     },
+//     spaceBetween: 10,
+//   });
 
   // const thumbs = new Swiper(n.querySelector('.swiper-parallax'), {
     
@@ -68,7 +68,7 @@ document.querySelectorAll('.page').forEach(n => {
 
   //thumbs.mousewheel.enable();
 
-  slider.controller.control = thumbs;
+  //slider.controller.control = thumbs;
   //thumbs.controller.control = slider;
-});
+//});
 

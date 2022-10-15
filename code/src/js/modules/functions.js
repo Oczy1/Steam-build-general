@@ -349,16 +349,61 @@ export function scrollHandler() {
     // const elements = document.querySelectorAll(`...`);
 
     // // and then make each element do something on scroll
-    const element = document.querySelector('.parallax__container');
+    const slideFirst = document.querySelector('.slide-first');
+    
+    const slideSecond = document.querySelector('.slide-second');
+    
+    const slideThird = document.querySelector('.slide-third');
+
     window.addEventListener(
         "scroll",
         () => {
-            if (window.pageYOffset > 300) {
-                for (const child of element.children) {
-                    if (window.pageYOffset < 1000)
-                        child.classList.add('paralax-animate');
-                    else break;
-                }
+            //console.log(window.pageYOffset)
+
+            if (window.pageYOffset >= 400 && window.pageYOffset < 1000) {
+                slideFirst.classList.add('pos-1');
+                slideSecond.classList.add('pos-2');
+                slideThird.classList.add('pos-3');
+
+                slideFirst.classList.remove('pos-2');
+                slideFirst.classList.remove('pos-3');
+
+                slideSecond.classList.remove('pos-1');
+                slideSecond.classList.remove('pos-3');
+
+                slideThird.classList.remove('pos-1');
+                slideThird.classList.remove('pos-2');
+
+                console.log('Ljoe');
+            } else if(window.pageYOffset >= 1000 && window.pageYOffset <= 1600) {
+                slideFirst.classList.add('pos-2');
+                slideSecond.classList.add('pos-3');
+                slideThird.classList.add('pos-1');
+
+                slideFirst.classList.remove('pos-1');
+                slideFirst.classList.remove('pos-3');
+
+                slideSecond.classList.remove('pos-1');
+                slideSecond.classList.remove('pos-2');
+
+                slideThird.classList.remove('pos-2');
+                slideThird.classList.remove('pos-3');
+                console.log('Жопа');
+            } else if(window.pageYOffset > 1600 && window.pageYOffset < 2200) {
+                slideFirst.classList.add('pos-3');
+                slideSecond.classList.add('pos-1');
+                slideThird.classList.add('pos-2');
+
+                slideFirst.classList.remove('pos-1');
+                slideFirst.classList.remove('pos-2');
+
+                slideSecond.classList.remove('pos-2');
+                slideSecond.classList.remove('pos-3');
+
+                slideThird.classList.remove('pos-1');
+                slideThird.classList.remove('pos-3');
+
+                console.log('Жопаааааааааааааа');
             }
             
         }

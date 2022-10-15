@@ -1403,8 +1403,11 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.page-index {
   position: sticky;
-  top: 10px;
+  top: -200px;
 }
 
 .column {
@@ -1727,7 +1730,8 @@ main {
 }
 .parallax__container {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  position: relative;
 }
 
 .parallax-animate {
@@ -1764,6 +1768,7 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 0 auto;
 }
 
 .image-item-midlle {
@@ -1782,4 +1787,55 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.slide-first {
+  top: 130px;
+}
+.slide-first > .image-item {
+  width: 100%;
+}
+
+.slide-second {
+  top: 0px;
+}
+.slide-second > .image-item {
+  width: 75%;
+}
+
+.slide-third {
+  top: 250px;
+}
+.slide-third > .image-item {
+  width: 50%;
+}
+
+.pos-1 {
+  top: 130px;
+  transition: all 1s ease-in-out;
+  filter: blur(0);
+  z-index: 3;
+}
+.pos-1 > .image-item {
+  width: 100%;
+}
+
+.pos-2 {
+  top: 0;
+  transition: all 1s ease-in-out;
+  filter: blur(3);
+  z-index: 2;
+}
+.pos-2 > .image-item {
+  width: 75%;
+}
+
+.pos-3 {
+  top: 250px;
+  transition: all 1s ease-in-out;
+  filter: blur(8);
+  z-index: 1;
+}
+.pos-3 > .image-item {
+  width: 50%;
 }

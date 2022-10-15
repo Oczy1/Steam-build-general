@@ -10,22 +10,27 @@ main {
     height: auto;
     width: 100%;
 }
+
 .page {
     width: 100%;
     //height: 1000px;
     display: flex;
     flex-direction: column;
+}
+
+.page-index{
     position: sticky;
-    top: 10px;
+    top: -200px;
 }
 
 .column {
     width: 100%;
-   
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .wrapper {
     background: url(../img/background1.jpg);
     background-position: fixed;
@@ -43,10 +48,9 @@ main {
     align-items: center;
     z-index: 2;
 }
-   
-.column-left-container {
-    
-}
+
+.column-left-container {}
+
 .image-elips {
     width: 100%;
     height: 863px;
@@ -58,6 +62,7 @@ main {
     top: 0%;
     z-index: 0;
 }
+
 .image-elips2 {
     width: 100%;
     height: 906px;
@@ -69,6 +74,7 @@ main {
     top: 0%;
     z-index: 0;
 }
+
 .image-elips3 {
     width: 100%;
     height: 975px;
@@ -82,19 +88,22 @@ main {
 }
 
 .hello {
-    
+
     padding: 80px 0 0 0;
     display: flex;
     flex-direction: column;
+
     &__description {
         display: flex;
         flex-direction: column;
     }
+
     &__logo {
         display: flex;
         align-items: center;
         width: 276px;
         padding: 0px 0px 20px 0px;
+
         span {
             padding: 0px 0px 0px 30px;
             color: #fff;
@@ -105,6 +114,7 @@ main {
             font-style: normal;
         }
     }
+
     &__btn {
         padding: 0px 0px 0px 0px;
     }
@@ -124,6 +134,7 @@ main {
         line-height: 48px;
         padding: 0px 0px 20px 0px;
     }
+
     &__list {
         font-family: "Inter";
         font-style: normal;
@@ -134,8 +145,9 @@ main {
         color: #afafaf;
         padding: 0px 0px 30px 25px;
     }
-    &__link {
-    }
+
+    &__link {}
+
     &__memo {
         font-family: "Inter";
         font-style: normal;
@@ -144,6 +156,7 @@ main {
         line-height: 19px;
         color: #ffffff;
         padding: 0px 0px 80px 0px;
+
         a {
             background-color: #0a40ff;
             font-size: 16px;
@@ -164,13 +177,16 @@ main {
     padding: 20px 40px;
     gap: 10px;
     transition: all 0.6s ease 0s;
+
     &:hover {
         background: $gradientBtnHover;
         box-shadow: 4px 0px 4px rgb(0, 0, 46, .2);
     }
 }
+
 .download {
     font-size: 32px;
+
     span {
         font-family: "Inter";
         font-style: normal;
@@ -188,11 +204,13 @@ main {
     flex-direction: column;
     align-items: center;
     height: auto;
+
     &__heading {
         padding: 0px 0px 60px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         h2 {
             color: #ffffff;
             font-family: "Inter";
@@ -201,6 +219,7 @@ main {
             font-size: 48px;
             line-height: 58px;
         }
+
         p {
             width: 400px;
             text-align: center;
@@ -241,6 +260,7 @@ main {
     border-radius: 7px;
     padding: 33px 3px;
     color: #ffffff;
+
     &::after {
         font-size: 14px;
     }
@@ -251,25 +271,26 @@ main {
     border-radius: 7px;
     padding: 33px 3px;
     color: #ffffff;
+
     &::after {
         font-size: 14px;
     }
 }
 
 .swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-}
+.swiper-rtl .swiper-button-next {}
+
 .swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-}
+.swiper-rtl .swiper-button-prev {}
+
 .swiper-button-prev,
-.swiper-button-next {
-}
+.swiper-button-next {}
 
 .slider__image {
     text-align: center;
     display: flex;
     width: 580px;
+
     img {
         max-width: 100%;
         pointer-events: none;
@@ -282,6 +303,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .block {
     width: 460px;
     height: auto;
@@ -293,15 +315,18 @@ main {
     padding: 20px 40px;
     margin: 0px 0px 50px 0px;
     border-radius: 10px;
+
     &:last-child {
         margin: 0px 0px 0px 0px;
     }
+
     &__header {
         display: flex;
         width: 100%;
         justify-content: flex-start;
         align-items: center;
         padding: 0px 0px 25px 0px;
+
         h3 {
             font-family: "Inter";
             font-style: normal;
@@ -311,6 +336,7 @@ main {
             color: #ffffff;
         }
     }
+
     &__discription {
         p {
             font-family: "Inter";
@@ -322,11 +348,13 @@ main {
             text-align: start;
         }
     }
+
     &__time {
         padding: 25px 0px 0px 0px;
         width: 100%;
         display: flex;
         justify-content: end;
+
         p {
             font-family: "Inter";
             font-style: normal;
@@ -344,7 +372,7 @@ main {
     padding: 0px 10px 0px 0px;
 }
 
-.parallax{
+.parallax {
     width: 100%;
     height: 100px;
     display: flex;
@@ -353,35 +381,38 @@ main {
     justify-content: center;
     //position: relative;
     //overflow: hidden;
-    
+
     position: sticky;
     top: 100px;
-    &__container{
+
+    &__container {
         width: 100%;
-        height: 100%;
+        height: 600px;
+        position: relative;
     }
 }
 
-.parallax-animate{
+.parallax-animate {
     animation: 1s ease-in 1s 1 reverse both running kirill;
 }
 
-.parallax-disanimate{
+.parallax-disanimate {
     animation: 1s ease-in 1s 1 reverse both running debil;
 }
 
-.swiper-parallax{
+.swiper-parallax {
     width: 100%;
     height: 100%;
     padding: 40px 50px;
 }
-.parallax-wrapper{
+
+.parallax-wrapper {
     width: 100%;
     height: 100vh;
     //overflow: hidden;
 }
 
-.parallax-image{
+.parallax-image {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -389,16 +420,18 @@ main {
     transition: top .5s;
 }
 
-.image-item{
-        width: 100%;
-        height: 99px;
-        background: url(../img/caskad1.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
+.image-item {
+    width: 100%;
+    height: 99px;
+    background: url(../img/caskad1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin: 0 auto;
 }
 
-.image-item-midlle{
+.image-item-midlle {
     width: 100%;
     height: 99px;
     background: url(../img/caskad2.png);
@@ -407,7 +440,7 @@ main {
     background-size: contain;
 }
 
-.image-item-bottom{
+.image-item-bottom {
     width: 100%;
     height: 99px;
     background: url(../img/caskad3.png);
@@ -415,4 +448,63 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
 
+}
+
+.slide-first {
+    top: 130px;
+    &>.image-item {
+        width: 100%;
+    }
+}
+
+.slide-second {
+    top: 0px;
+    &>.image-item {
+        width: 75%;        
+    }
+}
+
+.slide-third {
+    top: 250px;
+    &>.image-item {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+.pos-1 {
+    top: 130px;
+    transition: all 1s ease-in-out;
+    filter: blur(0);
+    z-index: 3;
+
+    &>.image-item {
+        width: 100%;
+    }
+}
+
+.pos-2 {
+    top: 0;
+    transition: all 1s ease-in-out;
+    filter: blur(3);
+    z-index: 2;
+
+    &>.image-item {
+        width: 75%;
+    }
+}
+
+.pos-3 {
+    top: 250px;
+    transition: all 1s ease-in-out;
+    filter: blur(8);
+    z-index: 1;
+
+    &>.image-item {
+        width: 50%;
+    }
 }

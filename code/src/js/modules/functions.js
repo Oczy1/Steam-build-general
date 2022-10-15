@@ -374,7 +374,7 @@ export function scrollHandler() {
                 slideThird.classList.remove('pos-1');
                 slideThird.classList.remove('pos-2');
 
-                console.log('Ljoe');
+                // console.log('Ljoe');
             } else if(window.pageYOffset >= 1000 && window.pageYOffset <= 1600) {
                 slideFirst.classList.add('pos-2');
                 slideSecond.classList.add('pos-3');
@@ -388,7 +388,7 @@ export function scrollHandler() {
 
                 slideThird.classList.remove('pos-2');
                 slideThird.classList.remove('pos-3');
-                console.log('Жопа');
+                // console.log('Жопа');
             } else if(window.pageYOffset > 1600 && window.pageYOffset < 2200) {
                 slideFirst.classList.add('pos-3');
                 slideSecond.classList.add('pos-1');
@@ -403,7 +403,7 @@ export function scrollHandler() {
                 slideThird.classList.remove('pos-1');
                 slideThird.classList.remove('pos-3');
 
-                console.log('Жопаааааааааааааа');
+                // console.log('Жопаааааааааааааа');
             }
             
         }
